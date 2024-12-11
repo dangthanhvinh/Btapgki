@@ -1,0 +1,106 @@
+/* Cài đặt chung */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eef2f9;
+    margin: 0;
+}
+
+/* Form container */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Tiêu đề */
+.form-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #444;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Lỗi thông báo */
+.form-group.error {
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input và Select */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Radio buttons */
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group .radio-group {
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.form-group .radio-group label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: #444;
+}
+
+/* Nút bấm */
+.form-group button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+    background: linear-gradient(90deg, #0056b3, #003d80);
+}
+
+/* Hiệu ứng chuyển động */
+input, select, button {
+    transition: all 0.3s ease-in-out;
+}
